@@ -11,43 +11,47 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500&family=Raleway:wght@500&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+
     <title>MSR - Tratar dados</title>
 </head>
 <body>
 
-   <div class="container">
+   <div class="container-principal">
        
-    <div class="containerCentral container-fluid">
+    <div class="containerDeDados">
+
+        <img id="logo" src="./img/logomsr.png" class="img-fluid" alt="MSR LOGO" style="max-width: 20%; margin-bottom: 30px">
+
+        <textarea name="" id="teste" cols="30" rows="5" placeholder="Insira o HTML da página"></textarea>
+    
+        <p>Selecione a transportadora:</p>
+    
+            <div class="selects">
+
+                <select class="form-select" id="tp" placeholder="transportadora">
+                    <option value="MSR">MSR</option>
+                    <option value="VÉRTICE">VÉRTICE</option>
+                </select>
+                <div style="width:40px;"></div>
+                <select class="form-select" id="time" placeholder="AM/PM">
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                </select>
+            </div>
+
+        <button class="btn btn-danger btn-baixar" id="send">BAIXAR</button>
             
-       
-        <div class="containerDeDados">
-            <img id="logo" src="./img/logomsr.jpeg" class="img-fluid" alt="MSR LOGO" style="max-width: 20%; margin-bottom: 30px">
+          <div class="modonoturno">
+            <input type="checkbox" class="checkbox" id="chk" />
+                <label for="chk" class="label">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>    
+                <div class="ball"></div>
+             </label>
+          </div>
 
-            <h2>Informe o HTML da pagina de monitoramento aqui:</h2>
-        
-            <textarea name="" id="teste" cols="30" rows="5" placeholder="html"></textarea>
-        
-            <h4>Informe o nome da transportadora:</h4>
-        
-                <div class="selects">
-
-                    <select class="form-select" id="tp" placeholder="transportadora">
-                        <option value="MSR">MSR</option>
-                        <option value="VÉRTICE">VÉRTICE</option>
-                    </select>
-                    
-                    <select class="form-select" id="time" placeholder="AM/PM">
-                        <option value="AM">AM</option>
-                        <option value="PM">PM</option>
-                    </select>
-                </div>
-
-            <button class="btn btn-danger btn-baixar" id="send">BAIXAR</button>
-
-            <div id="conteudo"></div>
-        </div>
+        <div id="conteudo"></div>
     </div>
-
    </div>
 
 
@@ -60,5 +64,7 @@
  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.11.6/xlsx.core.min.js"></script>
 <script src="https://cdn.jsdelivr.net/alasql/0.3/alasql.min.js"></script>
 <script src="script.js"></script>
+<script src="theme.js"></script>
+<script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymus"></script>
 </body>
 </html>
