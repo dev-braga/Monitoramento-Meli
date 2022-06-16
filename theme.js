@@ -20,11 +20,11 @@ chk.addEventListener('change', () => {
     
     if(isChecked){
         changeTheme(darkTheme)
-        image.setAttribute('src', './img/logomsrnoturno.png')
+        image.setAttribute('src', 'logomsrnoturno.png')
     }
     else{
         changeTheme(lighTheme)
-        image.setAttribute('src', './img/logomsr.png')
+        image.setAttribute('src', 'logomsr.png')
     }
    
 })  
