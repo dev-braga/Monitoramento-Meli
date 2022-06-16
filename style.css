@@ -1,0 +1,51 @@
+.containerCentral{
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.containerDeDados{
+    width: 70%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(90, 90, 90);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 2px 5px 30px 10px rgb(216, 216, 216);
+}
+.selects{
+    width: 60%;
+    display: flex;
+    flex-direction:row;
+    align-content: space-between;
+    padding: 20px;
+}
+
+.btn-baixar{
+    width: 50%;
+    display: flex;
+    align-content: center;
+}
+
+h2{
+   padding: 10px;
+   font-family: 'Archivo', sans-serif;
+   font-style: 500;
+}
+h4{
+    padding: 10px;
+    font-family: 'Archivo', sans-serif;
+}
+
+textarea{
+    padding: 10px;
+    border: 1px solid rgb(255, 175, 175);
+    font-family: 'Archivo', sans-serif;
+    font-style: 500;
+}

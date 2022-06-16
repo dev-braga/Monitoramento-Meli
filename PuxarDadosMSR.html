@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500&family=Raleway:wght@500&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <title>MSR - Tratar dados</title>
+</head>
+<body>
+
+   <div class="container">
+       
+    <div class="containerCentral container-fluid">
+            
+       
+        <div class="containerDeDados">
+            <img id="logo" src="./img/logomsr.jpeg" class="img-fluid" alt="MSR LOGO" style="max-width: 20%; margin-bottom: 30px">
+
+            <h2>Informe o HTML da pagina de monitoramento aqui:</h2>
+        
+            <textarea name="" id="teste" cols="30" rows="5" placeholder="html"></textarea>
+        
+            <h4>Informe o nome da transportadora:</h4>
+        
+                <div class="selects">
+
+                    <select class="form-select" id="tp" placeholder="transportadora">
+                        <option value="MSR">MSR</option>
+                        <option value="VÉRTICE">VÉRTICE</option>
+                    </select>
+                    
+                    <select class="form-select" id="time" placeholder="AM/PM">
+                        <option value="AM">AM</option>
+                        <option value="PM">PM</option>
+                    </select>
+                </div>
+
+            <button class="btn btn-danger btn-baixar" id="send">BAIXAR</button>
+
+            <div id="conteudo"></div>
+        </div>
+    </div>
+
+   </div>
+
+
+   
+
+   <!-- JAVSCRIPT-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.11.6/xlsx.core.min.js"></script>
+<script src="https://cdn.jsdelivr.net/alasql/0.3/alasql.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
