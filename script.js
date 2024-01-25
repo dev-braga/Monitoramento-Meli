@@ -25,7 +25,7 @@ $('#send').click(async function () {
         })
 
     var placas = [];
-    $('.monitoring-row-details > .andes-tooltip__trigger > .monitoring-row-details__license').each(function(n, item) {
+    $('.andes-tooltip__trigger > .monitoring-row-details__license').each(function(n, item) {
         placas.push(item.innerText);
     })
 
