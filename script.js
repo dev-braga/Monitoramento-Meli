@@ -141,31 +141,5 @@ $('#send').click(async function () {
     })
     var data3 = dataAtualFormatada2()
 	var sql = await alasql('SELECT * INTO XLSX("'+nome+'-'+data3+'_'+$('#tp').val()+'.xlsx", {headers: true}) FROM ?', [table]);
-
-	
-     // Enviar e-mail com o arquivo anexado
-     Email.send({
-        Host: 'smtp.gmail.com', // substitua pelo seu provedor de e-mail
-        Username: 'brunobraga.text@gmail.com',
-        Password: '!Bruninho12',
-        To: 'braga.trader12@gmail.com',
-        From: 'brunobraga.text@gmail.com',
-        Subject: 'Planilha e-mail',
-        Body: 'Corpo do E-mail',
-        Attachments: [
-            {
-                name: fileName,
-                data: btoa(sql)
-            }
-        ]
-    }).then(
-        message => {
-            alert("E-mail enviado com sucesso!");
-            location.reload(); // recarrega a página após o envio do e-mail
-        }
-    ).catch(
-        error => alert("Erro ao enviar e-mail:", error)
-    );
-	
 	location.reload();
 });
